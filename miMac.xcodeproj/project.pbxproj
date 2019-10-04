@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F038529B234619D7008A7DCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038529A234619D7008A7DCC /* AppDelegate.swift */; };
+		F038529D234619D7008A7DCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038529C234619D7008A7DCC /* ViewController.swift */; };
+		F038529F234619D8008A7DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F038529E234619D8008A7DCC /* Assets.xcassets */; };
+		F03852A2234619D8008A7DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03852A0234619D8008A7DCC /* Main.storyboard */; };
+		F03852AE234619D8008A7DCC /* miMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03852AD234619D8008A7DCC /* miMacUITests.swift */; };
+		F03852BF23461A0B008A7DCC /* CoreBluetooth+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03852B923461A0B008A7DCC /* CoreBluetooth+Extensions.swift */; };
+		F03852C623461A29008A7DCC /* BandServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03852C423461A29008A7DCC /* BandServices.swift */; };
+		F04D8B74234638210065117D /* MiBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D8B73234638210065117D /* MiBand.swift */; };
+		F0D221BE23470FAB00AB8C91 /* Screen.c in Sources */ = {isa = PBXBuildFile; fileRef = F0D221BD23470FAB00AB8C91 /* Screen.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F03852AA234619D8008A7DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F038528F234619D7008A7DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0385296234619D7008A7DCC;
+			remoteInfo = miMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0385297234619D7008A7DCC /* miMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F038529A234619D7008A7DCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F038529C234619D7008A7DCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F038529E234619D8008A7DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F03852A1234619D8008A7DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F03852A3234619D8008A7DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F03852A4234619D8008A7DCC /* miMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = miMac.entitlements; sourceTree = "<group>"; };
+		F03852A9234619D8008A7DCC /* miMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F03852AD234619D8008A7DCC /* miMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miMacUITests.swift; sourceTree = "<group>"; };
+		F03852AF234619D8008A7DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F03852B923461A0B008A7DCC /* CoreBluetooth+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreBluetooth+Extensions.swift"; sourceTree = "<group>"; };
+		F03852C423461A29008A7DCC /* BandServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandServices.swift; sourceTree = "<group>"; };
+		F04D8B73234638210065117D /* MiBand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiBand.swift; sourceTree = "<group>"; };
+		F04D8B7D23464AF40065117D /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = System/Library/Frameworks/SecurityInterface.framework; sourceTree = SDKROOT; };
+		F055CBFC23465E6B00687C7F /* miMac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "miMac-Bridging-Header.h"; sourceTree = "<group>"; };
+		F0D221BC23470FAB00AB8C91 /* Screen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		F0D221BD23470FAB00AB8C91 /* Screen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Screen.c; sourceTree = "<group>"; };
+		F0D302E3234659BB00341CEA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0385294234619D7008A7DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03852A6234619D8008A7DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F038528E234619D7008A7DCC = {
+			isa = PBXGroup;
+			children = (
+				F03852C823461A3E008A7DCC /* Mi */,
+				F0385299234619D7008A7DCC /* miMac */,
+				F03852AC234619D8008A7DCC /* miMacUITests */,
+				F0385298234619D7008A7DCC /* Products */,
+				F04D8B7C23464AF40065117D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0385298234619D7008A7DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0385297234619D7008A7DCC /* miMac.app */,
+				F03852A9234619D8008A7DCC /* miMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0385299234619D7008A7DCC /* miMac */ = {
+			isa = PBXGroup;
+			children = (
+				F038529A234619D7008A7DCC /* AppDelegate.swift */,
+				F038529C234619D7008A7DCC /* ViewController.swift */,
+				F038529E234619D8008A7DCC /* Assets.xcassets */,
+				F03852A0234619D8008A7DCC /* Main.storyboard */,
+				F03852A3234619D8008A7DCC /* Info.plist */,
+				F03852A4234619D8008A7DCC /* miMac.entitlements */,
+			);
+			path = miMac;
+			sourceTree = "<group>";
+		};
+		F03852AC234619D8008A7DCC /* miMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F03852AD234619D8008A7DCC /* miMacUITests.swift */,
+				F03852AF234619D8008A7DCC /* Info.plist */,
+			);
+			path = miMacUITests;
+			sourceTree = "<group>";
+		};
+		F03852C823461A3E008A7DCC /* Mi */ = {
+			isa = PBXGroup;
+			children = (
+				F03852C423461A29008A7DCC /* BandServices.swift */,
+				F03852B923461A0B008A7DCC /* CoreBluetooth+Extensions.swift */,
+				F04D8B73234638210065117D /* MiBand.swift */,
+				F0D221BC23470FAB00AB8C91 /* Screen.h */,
+				F0D221BD23470FAB00AB8C91 /* Screen.c */,
+				F055CBFC23465E6B00687C7F /* miMac-Bridging-Header.h */,
+			);
+			name = Mi;
+			sourceTree = "<group>";
+		};
+		F04D8B7C23464AF40065117D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0D302E3234659BB00341CEA /* Security.framework */,
+				F04D8B7D23464AF40065117D /* SecurityInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0385296234619D7008A7DCC /* miMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F03852B2234619D8008A7DCC /* Build configuration list for PBXNativeTarget "miMac" */;
+			buildPhases = (
+				F0385293234619D7008A7DCC /* Sources */,
+				F0385294234619D7008A7DCC /* Frameworks */,
+				F0385295234619D7008A7DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = miMac;
+			productName = miMac;
+			productReference = F0385297234619D7008A7DCC /* miMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F03852A8234619D8008A7DCC /* miMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F03852B5234619D8008A7DCC /* Build configuration list for PBXNativeTarget "miMacUITests" */;
+			buildPhases = (
+				F03852A5234619D8008A7DCC /* Sources */,
+				F03852A6234619D8008A7DCC /* Frameworks */,
+				F03852A7234619D8008A7DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F03852AB234619D8008A7DCC /* PBXTargetDependency */,
+			);
+			name = miMacUITests;
+			productName = miMacUITests;
+			productReference = F03852A9234619D8008A7DCC /* miMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F038528F234619D7008A7DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Alok pandey";
+				TargetAttributes = {
+					F0385296234619D7008A7DCC = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					F03852A8234619D8008A7DCC = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F0385296234619D7008A7DCC;
+					};
+				};
+			};
+			buildConfigurationList = F0385292234619D7008A7DCC /* Build configuration list for PBXProject "miMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F038528E234619D7008A7DCC;
+			productRefGroup = F0385298234619D7008A7DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0385296234619D7008A7DCC /* miMac */,
+				F03852A8234619D8008A7DCC /* miMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0385295234619D7008A7DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F038529F234619D8008A7DCC /* Assets.xcassets in Resources */,
+				F03852A2234619D8008A7DCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03852A7234619D8008A7DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0385293234619D7008A7DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D221BE23470FAB00AB8C91 /* Screen.c in Sources */,
+				F038529D234619D7008A7DCC /* ViewController.swift in Sources */,
+				F03852C623461A29008A7DCC /* BandServices.swift in Sources */,
+				F038529B234619D7008A7DCC /* AppDelegate.swift in Sources */,
+				F04D8B74234638210065117D /* MiBand.swift in Sources */,
+				F03852BF23461A0B008A7DCC /* CoreBluetooth+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03852A5234619D8008A7DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03852AE234619D8008A7DCC /* miMacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F03852AB234619D8008A7DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0385296234619D7008A7DCC /* miMac */;
+			targetProxy = F03852AA234619D8008A7DCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F03852A0234619D8008A7DCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F03852A1234619D8008A7DCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F03852B0234619D8008A7DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F03852B1234619D8008A7DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F03852B3234619D8008A7DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = miMac/miMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UJ7K2EW83R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = miMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alokpandey.miMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "miMac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F03852B4234619D8008A7DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = miMac/miMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UJ7K2EW83R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = miMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alokpandey.miMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "miMac-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F03852B6234619D8008A7DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UJ7K2EW83R;
+				INFOPLIST_FILE = miMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alokpandey.miMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = miMac;
+			};
+			name = Debug;
+		};
+		F03852B7234619D8008A7DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UJ7K2EW83R;
+				INFOPLIST_FILE = miMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alokpandey.miMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = miMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0385292234619D7008A7DCC /* Build configuration list for PBXProject "miMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F03852B0234619D8008A7DCC /* Debug */,
+				F03852B1234619D8008A7DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F03852B2234619D8008A7DCC /* Build configuration list for PBXNativeTarget "miMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F03852B3234619D8008A7DCC /* Debug */,
+				F03852B4234619D8008A7DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F03852B5234619D8008A7DCC /* Build configuration list for PBXNativeTarget "miMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F03852B6234619D8008A7DCC /* Debug */,
+				F03852B7234619D8008A7DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F038528F234619D7008A7DCC /* Project object */;
+}
